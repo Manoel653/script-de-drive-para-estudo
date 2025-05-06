@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Drive</title>
+    <title>CRUD com JSON Modular</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://unpkg.com/@smash-sdk/uploader/dist/SmashUploader.browser.js"></script>
 </head>
+
 <body>
+    <header class="cabecalho">
+        <img src="logo.png" alt="Logo do site" class="logo">
+    <h1>Meu CRUD</h1>
+  </header>
+
     <div class="container">
-        <h1>Meu Drive</h1>
+        <div class="box">
+    <input type="text" id="nome" placeholder="Seu nome!">
+    <input type="email" id="email" placeholder="Seu E-mail!">
+    <button id="btnCriar">Criar</button>
 
-        <input type="file" id="uploadInput" multiple>
-        <button onclick="upload()">Enviar</button>
-
-        <p id="messageArea"></p>
-
-        <ul id="fileList"></ul>
+    <ul id="listaUsuarios"></ul>
     </div>
-    
-    <script src="js/script.js"></script>
+    </div>
+
+    <script type="module" src="main.js"></script>
 </body>
 </html>

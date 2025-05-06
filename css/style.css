@@ -1,0 +1,74 @@
+:root {
+    --bg: #f3f1f1;
+    --card-bg: #a694f886;
+    --text: #f3f3f3;
+    --shadow-dark: rgba(93, 58, 107, 0.678);
+    --shadow-light: rgba(186, 174, 252, 0.863);
+    --accent: #8a89b6;
+    --radius: 10px;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  input {
+    background-color: rgb(247, 247, 247);
+    border: 1.5px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 0.75rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  button {
+    margin-left: 65px;
+    background-color: rgba(250, 236, 198, 0.904);
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: var(--radius);
+    font-size: 1.2rem;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: rgba(196, 175, 120, 0.904);
+    transform: scale(1.03);
+  }
+  
+  
+  body  {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: #e6d7ec;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .box {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 1px 3px var(--shadow-dark);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+    max-width: 400px;
+  }
+  
