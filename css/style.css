@@ -50,6 +50,7 @@ button {
   font-size: 1.2rem;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
   box-shadow: 0 3px 0px rgba(252, 241, 207, 0.884), 0 -2px 0px rgba(211, 198, 161, 0.884);
+  cursor: pointer;
 }
 
 button:hover {
@@ -90,9 +91,65 @@ body  {
 
 
 .cabecalho {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   color: rgb(167, 129, 175);
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+
+.botao-editar {
+  box-shadow: none;
+  background-color: transparent;
+  color: #829b5b;
+  border: 2px solid #829b5b;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: border 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  height: 40px;
+  width: 90px;
+  margin-top: 60px;
+  margin-left: 20px;
+  gap: 4px;
+}
+
+.botao-editar:hover {
+  background-color: transparent;
+  color: #9bb96c;
+  border: 2px solid #9bb96c;
+  transform: scale(1.02);
+  box-shadow: none;
+}
+
+.botao-excluir {
+  box-shadow: none;
+  background-color: transparent;
+  color: #ca6e52;
+  border: 2px solid #ca6e52;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: border 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  height: 40px;
+  width: 90px;
+  margin-left: 265px;
+  margin-bottom: -20px;
+}
+
+.botao-excluir:hover {
+  background-color: transparent;
+  color: #eb8364;
+  border: 2px solid #eb8364;
+  transform: scale(1.02);
+  box-shadow: none;
+}
+
+.lista-usuario {
+  color: #795f8a;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  list-style-type: square;
+  margin-left: -50px;
 }

@@ -22,7 +22,7 @@ export function setupUI() {
 
 function renderLista() {
     const lista = document.getElementById('listaUsuarios');
-    lista.innerHTML = '';
+    lista.classList.add('lista-usuario');
 
     listarUsuarios(usuarios => {
         usuarios.forEach(usuario => {
@@ -30,8 +30,8 @@ function renderLista() {
 
             li.innerHTML = `
             ${usuario.nome} (${usuario.email})
-            <button onclick="editar(${usuario.id})">Editar</button>
-            <button onclick="excluir(${usuario.id})">Excluir</button>
+            <button class="botao-editar" onclick="editar(${usuario.id})">Editar</button>
+            <button class="botao-excluir" onclick="excluir(${usuario.id})">Excluir</button>
             `;
             lista.appendChild(li);
         })
@@ -49,7 +49,7 @@ window.editar = (id) => {
 }
 
 window.excluir = (id) => {
-    if (confirm("Tu tem certeza?")){
+    if (confirm("Tem certeza?")){
         deletarUsuario(id);
         renderLista();
     }
